@@ -1,0 +1,582 @@
+<ion-header [translucent]="true">
+  <ion-segment [scrollable]="true" (ionChange)="segmentChanged($event)">
+    <ion-segment-button value="home" >
+      <ion-icon name="home"></ion-icon>Inicio
+    </ion-segment-button>
+    <ion-segment-button value="historia">
+      <ion-icon name="hardware-chip-outline"></ion-icon>Paneles Solares
+    </ion-segment-button>
+    <ion-segment-button value="tres">
+      <ion-icon name="pin"></ion-icon>Generador Solar
+    </ion-segment-button>
+  </ion-segment>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+  <ion-row style="height:auto;margin-top: 20px;background-color: orange;">
+    <ion-col size-lg="6" size-xs="12" style="height: 100%;">
+      <div style="width: 100%;height: 100%;">
+        <p style="text-align: justify;font-size: 48px;font-family: 'Times New Roman', Times, serif;">Transformando la luz solar en soluciones para tu confort
+
+
+
+        </p>
+        <ion-segment [scrollable]="true" (ionChange)="segmentChanged1($event)" value="tab1">
+          <ion-segment-button value="tab1">
+
+             <ion-label>Quienes somos</ion-label>
+            </ion-segment-button>
+            <ion-segment-button value="tab2">
+              <ion-label>Mision</ion-label>
+            </ion-segment-button>
+            <ion-segment-button value="tab3">
+              <ion-label>Vision</ion-label>
+            </ion-segment-button>
+            <ion-segment-button value="tab4">
+              <ion-label>Valores</ion-label>
+            </ion-segment-button>
+          </ion-segment>
+        
+          <div *ngIf="activeSegment === 'tab1'">
+           <p style="text-align:lef;font-family: 'Times New Roman', Times, serif;font-size: 21px;">Empresa de energía solar enfocada en desarrollar y fortalecer la transición hacia un modelo de generación eléctrica descentralizado, resiliente y sostenible.
+
+           </p>
+          </div>
+          <div *ngIf="activeSegment === 'tab2'">
+           <p style="text-align:lef;font-family: 'Times New Roman', Times, serif;font-size: 21px;"> Formar parte activa de la transición energética sostenible del Ecuador, ofreciendo soluciones de ahorro de energía y sostenibilidad mediante la integración de un sistema fotovoltaico.  Ajustados a las necesidades de cada cliente y proyecto.</p>
+          </div>
+          <div *ngIf="activeSegment === 'tab3'">
+         <p style="text-align:lef;font-family: 'Times New Roman', Times, serif;font-size: 21px;">Trabajar con el objetivo de convertirnos en empresa líder en el sector de las energías renovables y eficiencia energética en Latino América.
+
+         </p>
+          </div>
+          <div *ngIf="activeSegment === 'tab4'">
+          <p style="text-align:lef;font-family: 'Times New Roman', Times, serif;font-size: 21px;">Nos sustentamos en cuatro pilares básicos basados en un auténtico compromiso de responsabilidad:</p>
+       
+<ion-icon name="analytics-outline" style="font-size: 30px;"></ion-icon>Pasion
+<hr/>
+<ion-icon name="pulse-outline" style="font-size: 30px;"></ion-icon>Transperencia
+
+<hr/>
+<ion-icon name="school-outline" style=" font-size: 30px;"></ion-icon>Resilencia
+<hr/>
+<ion-icon name="hardware-chip-outline" style="font-size: 30px;"></ion-icon>Inovacion
+</div>      
+</div>
+        
+      
+      
+    </ion-col>
+    <ion-col size-lg="6" size-xs="12" style="display: flex; flex-direction: column; justify-content: center;">
+      <div style="width: 100%; height: 70%; background-color: blue; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+        <ion-img src="https://millerspanish.com/assets/img/uploads/2019/10/solar.jpg" style="width: 100%; height: auto; max-height: 100%;"></ion-img>
+      </div>
+    </ion-col>
+    
+
+  </ion-row>
+</ion-grid>
+
+
+<ion-grid style="margin-bottom: 40px;background-color: rgb(243, 12, 62);">
+  <p style="font-size: 24px;margin-top: 20px;margin-left: 20px;margin-right:20px;color: black;background-color: rgb(243, 12, 62)">Nuestos  Objetivos</p>
+
+
+  <ion-row style="width: 95%; height: auto; margin: 20px 20px 20px 20px;background-color: rgb(236, 157, 8);">
+    <ion-col  size-lg="4" size-xs="12"  >
+<ion-card>
+  <ion-card-title style="display: flex; flex-direction: column; align-items: center; margin-top: 7px;">
+
+    <ion-icon name="storefront-outline" style="color: orange; font-size: 2em;"></ion-icon>
+    <h2 style="text-align: center;">Maximizar el potencial de ahorro de su factura eléctrica</h2>
+  
+  </ion-card-title>
+  
+<ion-card-content>
+  <p style="text-align: left;font-family: 'Times New Roman', Times, serif;font-size: 21px;">El ahorro económico en facturación es un gran vector para apostar por energía solar. Es transformar el gasto constante de todos los meses en un activo, con un carácter circular y compatible con el ambiente, generando un flujo positivo desde el primer día de operación.</p>
+</ion-card-content>
+</ion-card>
+
+    </ion-col>
+    <ion-col  size-lg="4" size-xs="12" >
+      <ion-card>
+        <ion-card-title  style="display: flex; flex-direction: column; align-items: center; margin-top: 7px;">
+        
+          <ion-icon name="construct-outline" style="color:orange;font-size: 2em;"></ion-icon>
+          <h2 style="text-align: center;">Diseñar el proyecto utilizando nuestra fórmula ganadora</h2>
+        </ion-card-title>
+         
+        
+        <ion-card-content>
+<p  style="text-align: left;font-family: 'Times New Roman', Times, serif;font-size: 21px;">
+  Tú proyecto de energía solar es el eje central de nuestro diseño. 
+</p>
+<hr/>
+<p  style="text-align: left;font-family: 'Times New Roman', Times, serif;font-size: 21px;">
+  Las grandes relaciones comerciales con los mayores fabricantes a nivel global nos permiten analizar cual fuera la tecnología más viable para adaptar al proyecto. 
+</p>
+
+        </ion-card-content>
+        </ion-card>
+            </ion-col>
+
+
+
+    <ion-col  size-lg="4" size-xs="12" >
+<ion-card>
+  <ion-card-title  style="display: flex; flex-direction: column; align-items: center; margin-top: 7px;">
+        
+    <ion-icon name="checkmark-done-outline"  style="color:orange;font-size: 2em;"></ion-icon>
+    <h2 style="text-align: center;">Entregar resultados eliminando cualquier riesgo</h2>
+  </ion-card-title>
+  
+<ion-card-content>
+
+  <p  style="text-align: left;font-family: 'Times New Roman', Times, serif;font-size: 21px;">
+    Gestionamos nuestros proyectos con la de experiencia que tiene Rural Energy y de nuestrod aliados comerciales de tecnología y energía sostenible
+  </p>
+</ion-card-content>
+</ion-card>
+
+
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+<div class="paneles" >
+  <ion-grid>
+    <ion-row>
+      <ion-col size-lg="6" size-xs="12" >
+  <div style="width: 100%;height: auto;background-color: rgb(255, 255, 255);">
+   <p style="font-family: 'Times New Roman', Times, serif;font-size: 40px;">¿Qué son los paneles solares? </p>
+  <br/>
+  <p style="text-align:left;font-family: 'Times New Roman', Times, serif;font-size: 21px;">
+    Los paneles solares, también conocidos como módulos fotovoltaicos, son dispositivos tecnológicos diseñados para convertir la luz solar en electricidad. Estos dispositivos están compuestos principalmente por células solares, que son dispositivos semiconductores que generan corriente eléctrica cuando son expuestos a la luz sol
+  </p>
+  <p style="text-align:left;font-family: 'Times New Roman', Times, serif;font-size: 21px;"> La principal ventaja de los paneles solares radica en su capacidad para aprovechar una fuente de energía renovable e inagotable: la luz solar. Al transformar la energía solar en electricidad, los paneles solares contribuyen a la sostenibilidad y reducen la dependencia de fuentes de energía no renovables. Este proceso se realiza de manera limpia y sin emisiones de gases de efecto invernadero, lo que beneficia el medio ambiente y ayuda en la lucha contra el cambio climático.</p>
+  
+  
+  <p style="text-align:left;font-family: 'Times New Roman', Times, serif;font-size: 21px">Asimismo, muchos gobiernos y organizaciones ofrecen incentivos y subvenciones para fomentar la adopción de energía solar, lo que hace que la inversión inicial sea más atractiva</p>
+  </div>
+      </ion-col>
+      <ion-col size-lg="6" size-xs="12">
+  <div style="width: 100%;height: 100%;background-color: rgb(226, 125, 43); align-items:center;display: flex;justify-content: center; border-radius: 90px;">
+    <ion-img src="assets/foto.jpg" style="width: 80%; max-width: 600px; height: auto; object-fit: cover; border-radius: 80px;"> </ion-img>
+  </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  </div>
+  
+  
+
+<div style="width: auto;height: auto;background-color:rgb(196, 178, 178) ;">
+  <h2 style="font-family: 'Times New Roman', Times, serif;font-size: 40px;color: rgb(14, 230, 143);margin-left: 20px;">Tipos de Paneles</h2>
+  <h2 style="font-family: 'Times New Roman', Times, serif;font-size: 40px;color: rgb(14, 230, 143);margin-left: 20px;"> Solares </h2>
+  <hr/>
+  
+  
+  
+  <ion-grid>
+  
+    <ion-row style="width: 100%;height: auto;">
+      <ion-col size-lg="6" size-xs="12" style="height: auto;width: 100%;">
+  
+        
+  <p style="margin-left:7px;color: rgb(14, 230, 14);font-family: 'Times New Roman', Times, serif;font-size: 27px;">Paneles solares policristalinos
+  </p>
+  <p style="margin-left: 12px;font-family: 'Times New Roman', Times, serif;font-size: 21px;color: white;">Los paneles solares policristalinos son una opción popular para sistemas fotovoltaicos debido a su relación costo-eficiencia. Fabricados mediante la fusión de múltiples cristales de silicio, estos paneles son reconocibles por su color azulado y patrón irregular, características que surgen del proceso de enfriamiento más rápido del silicio. Aunque su eficiencia, que oscila entre el 13% y el 16%, es ligeramente inferior a la de los paneles monocristalinos, su menor costo de producción los hace económicamente atractivos para proyectos a gran escala y aplicaciones residenciales donde el espacio no es una limitación crítica.
+
+    Además de ser más baratos, los paneles policristalinos ofrecen una buena durabilidad y una vida útil comparable a la de los monocristalinos, generalmente alrededor de 25 años. Estos paneles son menos afectados por las altas temperaturas, aunque su rendimiento puede degradarse más rápidamente en condiciones extremas. Dada su robustez y costo efectivo, los paneles policristalinos son una excelente elección para quienes buscan un equilibrio entre eficiencia y asequibilidad en la implementación de energía solar.
+  </p>
+</ion-col>
+        
+            <ion-col size-lg="6" size-xs="12" style="height: 325px;width: auto;text-align: center;display: flex;align-items: center;">
+             
+        
+                <ion-img src="assets/policristalino.jpg" style="width: 100%;height: 100%;">
+              
+                </ion-img>
+            
+            </ion-col>
+       
+    </ion-row>
+  
+
+    
+  </ion-grid>
+  
+
+  <ion-grid>
+  
+    <ion-row style="width: 100%;height: auto;">
+      <ion-col size-lg="6" size-xs="12" style="height: auto;width: 100%;">
+  
+        
+  <p style="margin-left:7px;color: rgb(14, 230, 14);font-family: 'Times New Roman', Times, serif;font-size: 27px;">Paneles solares monocristalimps
+  </p>
+  <p style="margin-left: 12px;font-family: 'Times New Roman', Times, serif;font-size: 21px;color: white;">Los paneles solares monocristalinos se destacan por su alta eficiencia energética, que generalmente oscila entre el 15% y el 20%. Se fabrican a partir de un único cristal de silicio, lo que les confiere una apariencia uniforme y elegante, generalmente en tonos oscuros. Esta uniformidad permite una mayor captura y conversión de la luz solar en electricidad en comparación con otros tipos de paneles. Aunque su costo inicial es más alto que el de los paneles policristalinos, su mayor eficiencia los hace ideales para áreas donde el espacio es limitado. Su vida útil supera comúnmente los 25 años, ofreciendo un retorno de inversión atractivo a largo plazo debido a su durabilidad y rendimiento superior.
+
+
+
+
+
+
+
+  </p>
+</ion-col>
+        
+            <ion-col size-lg="6" size-xs="12" style="height: 325px;width: auto;text-align: center;display: flex;align-items: center;">
+             
+        
+                <ion-img src="assets/monocristalino.jpg" style="width: 100%;height: 100%;">
+              
+                </ion-img>
+            
+            </ion-col>
+       
+    </ion-row>
+  
+
+    
+  </ion-grid>
+  
+  </div>
+  
+
+  <div class="paneles" >
+    <ion-grid>
+      <ion-row>
+        <ion-col size-lg="6" size-xs="12" >
+    <div style="width: 100%;height: auto;background-color: rgb(255, 255, 255);">
+     <p style="font-family: 'Times New Roman', Times, serif;font-size: 40px;">¿Qué son los controladores solares? </p>
+    <br/>
+    <p style="text-align:left;font-family: 'Times New Roman', Times, serif;font-size: 21px;">
+      Los controladores solares, también conocidos como reguladores de carga, son componentes fundamentales en sistemas de energía solar que integran baterías. Su función principal es regular el flujo de electricidad desde los paneles solares hacia las baterías, asegurando una carga segura y eficaz. Estos dispositivos previenen la sobrecarga y la descarga excesiva, protegiendo las baterías y extendiendo su vida útil.
+    </p>
+    <p style="text-align:left;font-family: 'Times New Roman', Times, serif;font-size: 21px;"> Al evitar la sobrecarga, se impide que las baterías sufran daños que podrían ser permanentes, mientras que la protección contra descargas profundas ayuda a mantener la integridad del almacenamiento energético. Además, los controladores solares optimizan la eficiencia de la carga ajustando los parámetros de carga según las condiciones específicas de cada batería y las circunstancias operativas del sistema.</p>
+    
+    
+    <p style="text-align:left;font-family: 'Times New Roman', Times, serif;font-size: 21px">Este nivel de regulación no solo mejora la eficiencia general del sistema solar, sino que también contribuye a la seguridad, previniendo situaciones de riesgo como cortocircuitos y sobrecalentamientos.</p>
+    </div>
+        </ion-col>
+        <ion-col size-lg="6" size-xs="12">
+    <div style="width: 100%;height: 100%;background-color: rgb(226, 125, 43); align-items:center;display: flex;justify-content: center; border-radius: 90px;">
+      <ion-img src="assets/monica.png" style="width: 80%; max-width: 600px; height: auto; object-fit: cover; border-radius: 80px;"> </ion-img>
+    </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    </div>
+    
+    
+  
+
+
+    <div style="width: auto;height: auto;background-color:rgb(196, 178, 178) ;">
+      <h2 style="font-family: 'Times New Roman', Times, serif;font-size: 40px;color: rgb(14, 230, 143);">Tipos de Controladores</h2>
+      <h2 style="font-family: 'Times New Roman', Times, serif;font-size: 40px;color: rgb(14, 230, 143);"> Solares </h2>
+      <hr/>
+      
+      
+      
+      <ion-grid>
+      
+        <ion-row style="width: 100%;height: auto;">
+          <ion-col size-lg="6" size-xs="12" style="height: auto;width: 100%;">
+      
+            
+      <p style="margin-left:7px;color: rgb(14, 230, 14);font-family: 'Times New Roman', Times, serif;font-size: 27px;">Controladores de carga MPPT
+      </p>
+      <p style="margin-left: 12px;font-family: 'Times New Roman', Times, serif;font-size: 21px;color: white;">El controlador de carga MPPT (Maximum Power Point Tracking) es un componente esencial en sistemas fotovoltaicos, diseñado para maximizar la eficiencia de la energía solar al regular el flujo eléctrico entre los paneles solares y las baterías utiliza un algoritmo avanzado para encontrar y mantener el punto de máxima potencia" permitiendo obtener el máximo rendimiento de los paneles solares en diferentes condiciones de luz y temperatura.Pueden incluir funciones adicionales, como monitoreo en tiempo real, protecciones contra cortocircuitos y sobrecargas, y compensación de temperatura para proteger las baterías. Es una solución para sistemas fotovoltaicos que desean maximizar la producción de energía solar y garantizar la seguridad y longevidad del sistema.
+      </p>
+    </ion-col>
+            
+                <ion-col size-lg="6" size-xs="12" style="height: 325px;width: auto;text-align: center;display: flex;align-items: center;">
+                 
+            
+                    <ion-img src="assets/controleer.png" style="width: 100%;height: 100%;">
+                  
+                    </ion-img>
+                
+                </ion-col>
+           
+        </ion-row>
+      
+    
+        
+      </ion-grid>
+      
+    
+      <ion-grid>
+      
+        <ion-row style="width: 100%;height: auto;">
+          <ion-col size-lg="6" size-xs="12" style="height: auto;width: 100%;">
+      
+            
+      <p style="margin-left:7px;color: rgb(14, 230, 14);font-family: 'Times New Roman', Times, serif;font-size: 27px;"> Controladores de carga PWM
+      </p>
+      <p style="margin-left: 12px;font-family: 'Times New Roman', Times, serif;font-size: 21px;color: white;">Un controlador de carga PWM (Pulse Width Modulation) es un componente fundamental en sistemas solares, encargado de regular la energía que fluye desde los paneles solares hacia las baterías. Utiliza modulación por ancho de pulso para controlar el voltaje, ajustando la cantidad de electricidad mediante la variación de la duración de los pulsos eléctricos. Esto ayuda a mantener un nivel de carga seguro y evitar sobrecargas, lo que contribuye a la longevidad de las baterías.Puede cambiar entre modos de carga, como carga rápida, carga flotante y compensación de temperatura.Estos dispositivos son ampliamente utilizados en sistemas solares pequeños y medianos debido a su simplicidad y costo asequible
+    
+    
+    
+    
+    
+    
+    
+      </p>
+    </ion-col>
+            
+                <ion-col size-lg="6" size-xs="12" style="height: 325px;width: auto;text-align: center;display: flex;align-items: center;">
+                 
+            
+                    <ion-img src="assets/pwm.jpg" style="width: 100%;height: 100%;">
+                  
+                    </ion-img>
+                
+                </ion-col>
+           
+        </ion-row>
+      
+    
+        
+      </ion-grid>
+      
+      </div>
+      
+  <div class="paneles" >
+    <ion-grid>
+      <ion-row>
+        <ion-col size-lg="6" size-xs="12" >
+    <div style="width: 100%;height: auto;background-color: rgb(255, 255, 255);">
+     <p style="font-family: 'Times New Roman', Times, serif;font-size: 40px;">¿Qué son los Inversores? </p>
+    <br/>
+    <p style="text-align:left;font-family: 'Times New Roman', Times, serif;font-size: 21px;">
+      Los inversores solares son dispositivos clave en los sistemas de energía solar fotovoltaica que transforman la corriente continua (DC) generada por los paneles solares en corriente alterna (AC) utilizable en hogares y negocios. Esta conversión es esencial porque la mayoría de los electrodomésticos y la infraestructura eléctrica moderna operan con corriente alterna. Además de convertir la corriente, los inversores también optimizan la eficiencia del sistema solar al maximizar la producción de energía de los paneles, un proceso conocido como seguimiento del punto de máxima potencia (MPPT).
+
+    </p>
+    <p style="text-align:left;font-family: 'Times New Roman', Times, serif;font-size: 21px;"> Al evitar la sobrecarga, se impide que las baterías sufran daños que podrían ser permanentes, mientras que la protección contra descargas profundas ayuda a mantener la integridad del almacenamiento energético. Además, los controladores solares optimizan la eficiencia de la carga ajustando los parámetros de carga según las condiciones específicas de cada batería y las circunstancias operativas del sistema.</p>
+    
+    
+    <p style="text-align:left;font-family: 'Times New Roman', Times, serif;font-size: 21px">Este nivel de regulación no solo mejora la eficiencia general del sistema solar, sino que también contribuye a la seguridad, previniendo situaciones de riesgo como cortocircuitos y sobrecalentamientos.</p>
+    </div>
+        </ion-col>
+        <ion-col size-lg="6" size-xs="12">
+    <div style="width: 100%;height: 100%;background-color: rgb(226, 125, 43); align-items:center;display: flex;justify-content: center; border-radius: 90px;">
+      <ion-img src="assets/inversor.png" style="width: 80%; max-width: 600px; height: auto; object-fit: cover; border-radius: 80px;"> </ion-img>
+    </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    </div>
+    
+
+
+    <div style="width: auto;height: auto;background-color:rgb(196, 178, 178) ;">
+      <h2 style="font-family: 'Times New Roman', Times, serif;font-size: 40px;color: rgb(14, 230, 143);">Tipos de Inversores</h2>
+      <hr/>
+      
+      
+      
+      <ion-grid>
+      
+        <ion-row style="width: 100%;height: auto;">
+          <ion-col size-lg="6" size-xs="12" style="height: auto;width: 100%;">
+      
+            
+      <p style="margin-left:7px;color: rgb(14, 230, 14);font-family: 'Times New Roman', Times, serif;font-size: 27px;">Inversores de Onda Sinusoidal Pura
+      </p>
+      <p style="margin-left: 12px;font-family: 'Times New Roman', Times, serif;font-size: 21px;color: white;">Los inversores de onda sinusoidal pura son dispositivos que convierten la energía de corriente continua (DC), proveniente de paneles solares o baterías, en corriente alterna (AC) con una forma de onda suave y continua, similar a la de la red eléctrica convencional. Estas características hacen que los inversores de onda sinusoidal pura sean ideales para aplicaciones donde se requiere electricidad de alta calidad, permitiendo el funcionamiento seguro de dispositivos electrónicos sensibles.Una de sus principales características es la producción de una señal AC con baja distorsión armónica, lo que garantiza un suministro eléctrico estable y sin ruidos que puedan afectar el rendimiento de dispositivos como computadoras, electrodomésticos, equipos médicos y sistemas de audio y video. 
+      </p>
+    </ion-col>
+            
+                <ion-col size-lg="6" size-xs="12" style="height: 325px;width: auto;text-align: center;display: flex;align-items: center;">
+                 
+            
+                    <ion-img src="assets/pura.png" style="width: 100%;height: 100%;">
+                  
+                    </ion-img>
+                
+                </ion-col>
+           
+        </ion-row>
+      
+    
+        
+      </ion-grid>
+      
+    
+      <ion-grid>
+      
+        <ion-row style="width: 100%;height: auto;">
+          <ion-col size-lg="6" size-xs="12" style="height: auto;width: 100%;">
+      
+            
+      <p style="margin-left:7px;color: rgb(14, 230, 14);font-family: 'Times New Roman', Times, serif;font-size: 27px;"> Inversores de Onda Sinusoidal Modificada:
+      </p>
+      <p style="margin-left: 12px;font-family: 'Times New Roman', Times, serif;font-size: 21px;color: white;">  Los inversores de onda sinusoidal modificada son dispositivos que convierten la energía de corriente continua (DC) en corriente alterna (AC), pero con una forma de onda escalonada que imita la onda sinusoidal. Aunque no es tan suave como la onda sinusoidal pura, la onda sinusoidal modificada es suficientemente eficaz para una amplia gama de aplicaciones. Los inversores de onda sinusoidal modificada se utilizan en aplicaciones donde el costo es un factor importante y la precisión de la onda no es crítica. Por ejemplo, son comunes en sistemas solares para casas de campo, vehículos recreativos o pequeñas aplicaciones residenciales 
+    
+    
+    
+      </p>
+    </ion-col>
+            
+                <ion-col size-lg="6" size-xs="12" style="height: 325px;width: auto;text-align: center;display: flex;align-items: center;">
+                 
+            
+                    <ion-img src="assets/modificada.jpg" style="width: 100%;height: 100%;">
+                  
+                    </ion-img>
+                
+                </ion-col>
+           
+        </ion-row>
+      
+    
+        
+      </ion-grid>
+
+      
+      <ion-grid>
+      
+        <ion-row style="width: 100%;height: auto;">
+          <ion-col size-lg="6" size-xs="12" style="height: auto;width: 100%;">
+      
+            
+      <p style="margin-left:7px;color: rgb(14, 230, 14);font-family: 'Times New Roman', Times, serif;font-size: 27px;"> Inversores de Onda Cuadrada
+      </p>
+      <p style="margin-left: 12px;font-family: 'Times New Roman', Times, serif;font-size: 21px;color: white;">  Los inversores de onda cuadrada son dispositivos que convierten corriente continua (DC) en corriente alterna (AC) utilizando una forma de onda cuadrada, caracterizada por transiciones abruptas entre niveles de voltaje. Su alto nivel de distorsión armónica puede generar ruidos eléctricos, por lo que no son adecuados para dispositivos electrónicos sensibles como computadoras o equipos médicos. Son económicos y simples, lo que los hace útiles en aplicaciones básicas, como sistemas solares pequeños para iluminación y herramientas eléctricas. 
+    
+    
+    
+      </p>
+    </ion-col>
+            
+                <ion-col size-lg="6" size-xs="12" style="height: 325px;width: auto;text-align: center;display: flex;align-items: center;">
+                 
+            
+                    <ion-img src="assets/ocuadrada.png" style="width: 100%;height: 100%;">
+                  
+                    </ion-img>
+                
+                </ion-col>
+           
+        </ion-row>
+      
+    
+        
+      </ion-grid>
+      
+      
+      </div>
+      
+  
+
+
+      <div class="paneles" >
+        <ion-grid>
+          <ion-row>
+            <ion-col size-lg="6" size-xs="12" >
+        <div style="width: 100%;height: auto;background-color: rgb(255, 255, 255);">
+         <p style="font-family: 'Times New Roman', Times, serif;font-size: 40px;">¿Qué son las Baterias para sistemas de Energia Solar? </p>
+        <br/>
+        <p style="text-align:left;font-family: 'Times New Roman', Times, serif;font-size: 21px;"> 
+          Las baterías para sistemas de energía solar son componentes esenciales que almacenan la energía generada por los paneles solares para su uso posterior. Estas baterías permiten que los sistemas solares proporcionen electricidad durante la noche o en días nublados cuando la producción solar es insuficiente. Son especialmente cruciales en sistemas solares desconectados de la red (off-grid), permitiendo una independencia energética completa de la red eléctrica.</p>
+        
+        </div>
+            </ion-col>
+            <ion-col size-lg="6" size-xs="12">
+        <div style="width: 100%;height: 100%;background-color: rgb(226, 125, 43); align-items:center;display: flex;justify-content: center; border-radius: 90px;">
+          <ion-img src="assets/battery.jpg" style="width: 60%; max-width: 600px; height: auto; object-fit: cover; border-radius: 80px;"> </ion-img>
+        </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+        </div>
+        
+  
+  
+
+
+        <div style="width: auto;height: auto;background-color:rgb(196, 178, 178) ;">
+          <h2 style="font-family: 'Times New Roman', Times, serif;font-size: 40px;color: rgb(14, 230, 143);">Tipos de Baterias</h2>
+          <h2 style="font-family: 'Times New Roman', Times, serif;font-size: 40px;color: rgb(14, 230, 143);">  Para sistemas electricos Solares </h2>
+          <hr/>
+          
+          
+          
+          <ion-grid>
+          
+            <ion-row style="width: 100%;height: auto;">
+              <ion-col size-lg="6" size-xs="12" style="height: auto;width: 100%;">
+          
+                
+          <p style="margin-left:7px;color: rgb(14, 230, 14);font-family: 'Times New Roman', Times, serif;font-size: 27px;">Baterías de Plomo Ácido
+          </p>
+          <p style="margin-left: 12px;font-family: 'Times New Roman', Times, serif;font-size: 21px;color: white;">Las baterías de plomo-ácido son las más comunes y económicas entre las recargables, usadas ampliamente en automóviles, barcos y sistemas de energía solar. Estas baterías están compuestas por placas de plomo y dióxido de plomo, inmersas en una solución de ácido sulfúrico como electrolito. Son valoradas por su robustez y alta capacidad para ofrecer corrientes fuertes a corto plazo. En sistemas fotovoltaicos, desempeñan un papel crucial como fuente de almacenamiento, permitiendo que el exceso de energía solar se guarde para uso nocturno o en días nublados. Es especialmente útil en aplicaciones solares independientes de la red, proporcionando un suministro de energía estable y confiable
+          </p>
+        </ion-col>
+                
+                    <ion-col size-lg="6" size-xs="12" style="height: 325px;width: auto;text-align: center;display: flex;align-items: center;">
+                     
+                
+                        <ion-img src="assets/acido.jpg" style="width: 100%;height: 100%;">
+                      
+                        </ion-img>
+                    
+                    </ion-col>
+               
+            </ion-row>
+          
+        
+            
+          </ion-grid>
+          
+        
+          <ion-grid>
+          
+            <ion-row style="width: 100%;height: auto;">
+              <ion-col size-lg="6" size-xs="12" style="height: auto;width: 100%;">
+          
+                
+          <p style="margin-left:7px;color: rgb(14, 230, 14);font-family: 'Times New Roman', Times, serif;font-size: 27px;"> Bateria de Plomo Ácido (Gel) 
+          </p>
+          <p style="margin-left: 12px;font-family: 'Times New Roman', Times, serif;font-size: 21px;color: white;">Las baterías de plomo-ácido  contienen un electrolito gelificado en lugar de líquido, lo que reduce el riesgo de fugas y derrames. Su diseño hermético y sin ventilación adicional las hace ideales para instalaciones en interiores o entornos sensibles. Aunque suelen ser más pesadas que otras baterías recargables, son altamente fiables y se utilizan a menudo en sistemas fotovoltaicos como fuente de almacenamiento de energía. Permiten almacenar el excedente de energía solar durante el día para su uso durante la noche o en condiciones de poca luz. 
+        
+        
+        
+        
+        
+        
+          </p>
+        </ion-col>
+                
+                    <ion-col size-lg="6" size-xs="12" style="height: 325px;width: auto;text-align: center;display: flex;align-items: center;">
+                     
+                
+                        <ion-img src="assets/gel.jpg" style="width: 100%;height: 100%;">
+                      
+                        </ion-img>
+                    
+                    </ion-col>
+               
+            </ion-row>
+          
+        
+            
+          </ion-grid>
+          
+          </div>
+<div class="header-container">
+  <div class="header" style="background-image: url('https://technocio.com/wp-content/uploads/2022/06/Technocio.jpg');">
+    <div class="overlay"></div>
+    <div class="header-text">
+      <p style="text-align: center;">Soluciones de energía solar
+        en todo Ecuador</p>
+      
+    </div>
+  </div>
+</div>
+
+</ion-content>

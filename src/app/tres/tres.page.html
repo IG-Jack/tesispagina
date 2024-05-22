@@ -1,0 +1,332 @@
+<ion-header [translucent]="true">
+  <ion-segment [scrollable]="true" (ionChange)="segmentChanged($event)">
+    <ion-segment-button value="home" >
+      <ion-icon name="home"></ion-icon>Inicio
+    </ion-segment-button>
+    <ion-segment-button value="historia">Paneles Solares
+      <ion-icon name="hardware-chip-outline"></ion-icon>
+
+    </ion-segment-button>
+    <ion-segment-button value="tres">Generador Solar
+      <ion-icon name="pin"></ion-icon>
+    </ion-segment-button>
+    
+  </ion-segment>
+</ion-header>
+
+<ion-content>
+<div style="width: 100%;height: 300px; background-color: #151E26;">
+<ion-grid>
+  <ion-row  style="margin-left: 35px;margin-right: 35px; height: 300px;">
+    <ion-col size="3 " style="height: 100%;">
+<div class="encabezado">
+
+  <ion-img src="assets/generador.png">
+
+  </ion-img>
+</div>
+    </ion-col>
+
+    <ion-col size="6" style="height: 100%;">
+    <h1 style="color: #f2f2f2;">Rural Energy mejor generador solar portátil de 500w para acampar</h1>
+<h4 style="color: rgb(7, 253, 19);">Generador solar | Baterías de Plomo Acido GEl de 12V </h4>   
+<h4 style="color: rgb(7, 253, 19);">Regulador de carga | MPPT</h4>   
+<h4 style="color: rgb(7, 253, 19);">  Inversor  | Phoenix 12/500</h4>
+
+</ion-col>
+  
+
+</ion-row>
+</ion-grid>
+
+
+</div>
+<div style="width: 100%;height: auto;background-color: #151E26;" >
+  <ion-grid>
+    <ion-row>
+
+      <ion-col size="12" style=" padding-left: 30px;padding-right: 20px;">
+        <p style="color:rgb(252, 249, 246);font-family: 'Times New Roman', Times, serif;font-size: 21px">El generador solar portátil Rural Energy de 500w  es ideal para acampar y para lugares sin acceso a luz electrica.</p>
+        <p style="color:rgb(252, 249, 246);font-family: 'Times New Roman', Times, serif;font-size: 21px"> Es una estación de energía eléctrica multifunciónal, utiliza energía del sol para producir enegia electrica. Este generador solar integra una bateria de litio, un controlador de carga solar MPPT y un inversor en un sistema compacto para convertir la energía solar en corriente eléctrica. </p>
+        <p style="color:rgb(252, 249, 246);font-family: 'Times New Roman', Times, serif;font-size: 21px">Cada componente está diseñado para coincidir con la clasificación de electricidad del dispositivo que recibe energía.</p>
+        <p style="color:rgb(252, 249, 246);font-family: 'Times New Roman', Times, serif;font-size: 21px">La fuente de alimentación de litio con generador solar portátil de 24v y 3000w de energía gratuita  no solo proporciona salida de CC para aplicaciones de energía de CC como luz LED y ventilador de CC, sino que también proporciona puertos USB para cargar rápidamente dispositivos electrónicos de consumo como teléfonos móviles.
+        
+        </p>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</div>
+<hr/>
+<hr/>
+<hr/>
+<hr/>
+<hr/>
+<div style="width: 100%;height: auto; padding-left: 30px;
+font-family: 'Times New Roman', Times, serif;background-color: #151E26;">
+<h2 style="color: rgb(7, 253, 19);font-size: 30px;padding-top: 20px;padding-bottom: 14px;background-color: 151E26;">¿Como funciona?</h2>
+
+
+<p style="color:rgb(252, 249, 246);;margin-left: 30px;font-family: 'Times New Roman', Times, serif;font-size: 21px;margin-top: 20px;margin-bottom: 14px;background-color: 151E26;"> El generador solar portátil Rural Enegy tiene una sola forma de carga. Que es a través de los paneles solares incluidos El sistema de generador solar consta de 2  baterias de plomo de Acido (GEL) de  12V de que almacena la corriente CC que recibe de los paneles solares,incluye un  controlador MPPT de última generación  cuya funcion es rastrear continuamente el punto de máxima potencia del panel solar y ajustar la operación del sistema para maximizar la producción de energía , tambien cuenta con un Inversor para convetir la corriente CC a corriente CA..</p>
+
+<p style="margin-left: 30px;font-family: 'Times New Roman', Times, serif;font-size: 21px; color:rgb(252, 249, 246);;">  Además, el generador no requiere gas para funcionar y no emite vapores tóxicos como lo hacen los generadores de gas estándar, sin mencionar que no produce ningún sonido.En su cubierta metalica cuencta con toma corriente CA y puento USB para cargas tus dispositivos.</p>
+<h1 style="color: rgb(7, 253, 19);margin-left: 30px;margin-top: 25px;font-size: 28px;">Esquema</h1>
+</div>
+<hr/>
+<div class="contenedor">
+<div class="diagrama">
+
+  <ion-img src="assets/diagrama.jpg" ></ion-img>
+</div>
+</div>
+
+<div style="width: 100%; height: auto;padding-left: 35px;background-color: orange;">
+  <p style="font-family: Georgia, 'Times New Roman', Times, serif;font-size: 26px;color: rgb(7, 253, 19);background-color: orange;">Materiales</p>
+
+</div>
+
+
+
+<div style="width: 100%; height: auto; background-color: orange; position: relative;
+padding: 20px 20px 20px 20px;">
+  <swiper-container
+    #swiper
+    (swiper)="swiperReady()"
+    [loop]="true"
+    [pagination]="true"
+    style="width: 100%; height: auto;"
+  >
+  <swiper-slide>
+    <ion-grid class="af" style="height: 100%; display: flex; align-items: center; justify-content: center; text-align: center;">
+  
+      <ion-row style="height: 100%;">
+        <ion-col size-lg="6" size="12">
+          <ion-card style="border: none; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 20px; background-color: #f2f2f2;">
+            <ion-card-content style="margin: 20px; text-align: center;">
+              <ion-img src="assets/batery.png" style="width: 80%; height: auto; border-radius: 50%;"></ion-img>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col size-lg="6" size="12">
+          <ion-card style="border: none; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: #f2f2f2;">
+  
+            <ion-card-content style="font-size: 1.3rem; text-align: justify; color: black;">
+              <p style="color: rgb(15, 248, 105) ;font-size: 21px;" >1. Batería Aokly 12V 200AH:</p>
+              La energía que los paneles solares fotovoltaicos logran generar se puede almacenar de manera química en baterías. Estas baterías de ciclo profundo nos permiten almacenar la energía generada, para poder utilizarla en cualquier momento.
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </swiper-slide>
+  <!-- Repite el mismo patrón para los demás slides -->
+  
+  <swiper-slide>
+    <ion-grid class="af" style="height: 100%; display: flex; align-items: center; justify-content: center; text-align: center;">
+  
+      <ion-row style="height: 100%;">
+        <ion-col size-lg="6" size="12">
+          <ion-card style="border: none; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: #f2f2f2;">
+            <ion-card-content style="font-size: 1.3rem; text-align: justify; color: black;">
+              <p style="color: rgb(15, 248, 105);font-size: 21px">2. Breakers</p>
+              Reducen el impacto que pueden traer algunos problemas con el servicio de electricidad, reduciendo así la posibilidad de que los aparatos eléctricos anexados a la red sufran daños.
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col size-lg="6" size="12">
+          <ion-card style="border: none; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: #f2f2f2;">
+            <ion-card-content style="margin: 20px;">
+              <ion-img src="assets/breake.png" style="width: 80%; height: auto;"></ion-img>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </swiper-slide>
+  
+  <!-- Repite el mismo patrón para los demás slides -->
+  
+  <swiper-slide>
+    <ion-grid class="af" style="height: 100%; display: flex; align-items: center; justify-content: center; text-align: center;">
+  
+      <ion-row style="height: 100%;">
+        <ion-col size-lg="6" size="12">
+          <ion-card style="border: none; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: #f2f2f2;">
+            <ion-card-content style="margin: 20px;">
+              <ion-img src="assets/cable.png" style="width: 80%; height: auto;"></ion-img>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col size-lg="6" size="12">
+          <ion-card style="border: none; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: #f2f2f2;">
+            <ion-card-content style="font-size: 1.3rem; text-align: justify; color: black;">
+              <p style="color: rgb(15, 248, 105);font-size: 21px">3. Cable calibre 12 AWG:</p>
+              Se utilizan principalmente en circuitos de iluminación, enchufes y electrodomésticos.
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </swiper-slide>
+  
+  <!-- Repite el mismo patrón para los demás slides -->
+  
+  <swiper-slide>
+    <ion-grid class="af" style="height: 100%; display: flex; align-items: center; justify-content: center; text-align: center;">
+  
+      <ion-row style="height: 100%;">
+        <ion-col size-lg="6" size="12">
+          <ion-card style="border: none; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: #f2f2f2;">
+            <ion-card-content style="font-size: 1.3rem; text-align: justify; color: black;">
+              <p style="color: rgb(15, 248, 105);font-size: 21px">4. Cable calibre 14 AWG:</p>
+              Se utiliza en aplicaciones de baja potencia, como luces de bajo consumo y ventiladores, con capacidad de corriente de alrededor de 15 amperios.
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col size-lg="6" size="12">
+          <ion-card style="border: none; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: #f2f2f2;">
+            <ion-card-content style="margin: 20px;">
+              <ion-img src="assets/cobre.png" style="width: 80%; height: auto;"></ion-img>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </swiper-slide>
+  
+  <!-- Repite el mismo patrón para los demás slides -->
+  
+  <swiper-slide>
+    <ion-grid class="af" style="height: 100%; display: flex; align-items: center; justify-content: center; text-align: center;">
+  
+      <ion-row style="height: 100%;">
+        <ion-col size-lg="6" size="12">
+          <ion-card style="border: none; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: #f2f2f2;">
+            <ion-card-content style="margin: 20px;">
+              <ion-img src="assets/Fusibles.png" style="width: 80%; height: auto;"></ion-img>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col size-lg="6" size="12">
+          <ion-card style="border: none; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: #f2f2f2;">
+            <ion-card-content style="font-size: 1.3rem; text-align: justify; color: black;">
+              <p style="color: rgb(15, 248, 105);font-size: 21px">5. Fusibles</p>
+              Este elemento está ubicado en un punto estratégico de la instalación eléctrica para que se funda si la intensidad de la corriente supera un cierto valor. Así, el fusible interrumpe la corriente y salvaguarda la integridad de los conductores minimizando el riesgo de incendio y/o avería.
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </swiper-slide>
+  
+  <!-- Repite el mismo patrón para los demás slides -->
+  
+  <swiper-slide>
+    <ion-grid class="af" style="height: 100%; display: flex; align-items: center; justify-content: center; text-align: center;">
+  
+      <ion-row style="height: 100%;">
+        <ion-col size-lg="6" size="12">
+          <ion-card style="border: none; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: #f2f2f2;">
+            <ion-card-content style="margin: 20px;">
+              <ion-img src="assets/cerbo.png" style="width: 80%; height: auto;"></ion-img>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col size-lg="6" size="12">
+          <ion-card style="border: none; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: #f2f2f2;">
+            <ion-card-content style="font-size: 1.3rem; text-align: justify; color: black;">
+              <p style="color: rgb(15, 248, 105);font-size: 21px">6. Cerbo GX:</p>
+              Se puede controlar el estado de carga de la batería, el consumo, la captación de energía de los paneles fotovoltaicos, el generador y la red.
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </swiper-slide>
+  
+  <!-- Repite el mismo patrón para los demás slides -->
+  
+  <swiper-slide>
+    <ion-grid class="af" style="height: 100%; display: flex; align-items: center; justify-content: center; text-align: center;">
+  
+      <ion-row style="height: 100%;">
+        <ion-col size-lg="6" size="12">
+          <ion-card style="border: none; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: #f2f2f2;">
+            <ion-card-content style="font-size: 1.3rem; text-align: justify; color: black;">
+              <p style="color: rgb(15, 248, 105);font-size: 21px">7. Paneles solares</p>
+              Capturan la luz del sol, provocando que los electrones que hay en las células de silicio liberen energía que se convierte en electricidad en forma de corriente continua.
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col size-lg="6" size="12">
+          <ion-card style="border: none; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: #f2f2f2;">
+            <ion-card-content style="margin: 20px;">
+              <ion-img src="assets/panelsolar.jpeg" style="width: 80%; height: auto;"></ion-img>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </swiper-slide>
+  
+  <!-- Repite el mismo patrón para los demás slides -->
+  
+  <swiper-slide>
+    <ion-grid class="af" style="height: 100%; display: flex; align-items: center; justify-content: center; text-align: center;">
+  
+      <ion-row style="height: 100%;">
+        <ion-col size-lg="6" size="12">
+          <ion-card style="border: none; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: #f2f2f2;">
+            <ion-card-content style="font-size: 1.3rem; text-align: justify; color: black;">
+              <p style="color: rgb(15, 248, 105);font-size: 21px">8. Pure sinewave inverter Phoenix 12/500</p>
+              El inversor de corriente es un equipo que toma la energía de la batería que está en corriente continua y la transforma en corriente alterna.
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col size-lg="6" size="12">
+          <ion-card style="border: none; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: #f2f2f2;">
+            <ion-card-content style="margin: 20px;">
+              <ion-img src="assets/azul.png" style="width: 80%; height: auto;"></ion-img>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </swiper-slide>
+  
+  <!-- Repite el mismo patrón para los demás slides -->
+  
+  <swiper-slide>
+    <ion-grid class="af" style="height: 100%; display: flex; align-items: center; justify-content: center; text-align: center;">
+  
+      <ion-row style="height: 100%;">
+        <ion-col size-lg="6" size="12">
+          <ion-card style="border: none; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: #f2f2f2;">
+            <ion-card-content style="font-size: 1.3rem; text-align: justify; color: black;">
+              <p style="color: rgb(15, 248, 105); font-size: 21px">9. SmartSolar charge controller MPPT 100 20</p>
+              La tecnología MPPT garantiza la recogida y almacenamiento de cada partícula de energía disponible en sus paneles. La ventaja de este proceso es cuando el cielo está parcialmente nuboso y la intensidad de la luz cambia constantemente.
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col size-lg="6" size="12">
+          <ion-card style="border: none; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: #f2f2f2;">
+            <ion-card-content style="margin: 20px;">
+              <ion-img src="assets/monica.png" style="width: 80%; height: auto;"></ion-img>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </swiper-slide>
+  
+  
+
+  </swiper-container>
+
+</div>
+<hr/>
+<hr/>
+<hr/>
+<hr/>
+</ion-content>
